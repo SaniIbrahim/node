@@ -6,7 +6,7 @@ from .models import Post
 
 def post_list(request):
     posts = Post.published.all()
-    return render(request,'blog/post/list.html',{'posts': posts})
+    return render(request,'blog/post/index.html',{'posts': posts})
 
 
 
